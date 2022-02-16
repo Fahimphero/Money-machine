@@ -1,0 +1,8 @@
+input{
+    background-color: #DCDCDC;
+    border: 0;
+}
+.expense-name, .income{
+    margin-right: 15px;
+
+}
