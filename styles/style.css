@@ -1,12 +1,17 @@
+.right-column{
+    background-color: #F8F8F8;
+}
+
+/* input field */
 input{
     background-color: #DCDCDC;
     border: 0;
 }
 .expense-name, .income{
     margin-right: 15px;
-
 }
 
-.right-column{
-    background-color: #F8F8F8;
+/* error handling */
+.error-handling{
+display: none;
 }
