@@ -62,12 +62,15 @@ document.getElementById('save').addEventListener('click', function () {
 
     // saving Amount
     const totalSavings = incomeInput * (percentageInput / 100);
-    if (totalSavings < totalBalance) {
+    if (totalSavings <= totalBalance) {
         savingAmount.innerText = parseFloat(totalSavings);
         // remaining balance
         remainingBalance.innerText = totalBalance - parseFloat(totalSavings);
+        errorThree.style.display = 'none';
     }
     else {
+        savingAmount.innerText = '';
+        remainingBalance.innerText = '';
         errorThree.style.display = 'block';
     }
 
